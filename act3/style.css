@@ -1,0 +1,11 @@
+#Temperatura {
+ position: absolute;
+ top:150px;
+ left:250px
+}
+
+#Humedad {
+ position: absolute;
+ top:150px;
+ left:50px
+}
