@@ -1,0 +1,27 @@
+#Ktms {
+  -webkit-appearance: none;
+  height: 2px;
+  font-family: 'museo700';
+  margin-bottom: 0px;
+  position: absolute;
+  padding: .1em;
+  background: black;
+  color: yellow;
+  top:110px;
+  left:245px;
+  width:140px;
+}
+
+#Kvaluetms{
+  color: red;
+  top:105px;
+  left:400px;
+  position:absolute;
+}
+
+#TM{
+  color: red;
+  top:90px;
+  left:200px;
+  position:absolute;
+}
