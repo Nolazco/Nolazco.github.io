@@ -8,7 +8,8 @@ particle.login({ username: 'cnolazco@ucol.mx', password: 'patapon3' }).then( //C
   },
   function (err) {
     console.log('Could not log in.', err);
-  });
+  }
+);
 
 setInterval(function () { //Función que envia datos a la nube de Particle
   Ktms.oninput = function () { //Creamos la función que se ejecutará cada vez que se ingrese un valor
