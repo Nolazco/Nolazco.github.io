@@ -12,7 +12,9 @@ particle.login({ username: 'cnolazco@ucol.mx', password: 'patapon3' }).then( //C
 );
 
 function sendMessage(){
-  var message = document.getElementById('message').value.concat("&true");
+  var input = document.getElementById('message');
+  var message = input.value.concat("&true");
   console.log(message);
   particle.callFunction({ deviceId: '0a10aced202194944a05a06c', name: 'sendSMS', argument: message, auth: token, })
+  input.value = "";
 };
