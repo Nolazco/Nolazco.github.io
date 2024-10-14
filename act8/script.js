@@ -1,6 +1,6 @@
 var particle = new Particle(); //Creamos una nueva instancia de Particle
 var token; //Variable donde se almacenará el token de acceso
-particle.login({ username: 'afernandez0@ucol.mx', password: 'Patapon2023' }).then( //Ingresamos con nuestras credenciales
+particle.login({ username: 'correo@particle.com', password: 'contraseña' }).then( //Ingresamos con nuestras credenciales
   function (data) { //Obtenemos todos los datos del inicio de sesión
     token = data.body.access_token; //Guardamos el token de acceso
     console.log('Acceso exitoso'); //Hacemos saber al usuario que todo salió bien
@@ -13,7 +13,7 @@ particle.login({ username: 'afernandez0@ucol.mx', password: 'Patapon2023' }).the
 var ca = 0; //Variable donde se almacenará la información obtenida
 var mensaje = "Conectando..."; //Mensaje que se enviará al cliente, contiene un mensaje por defecto
 setInterval(function () { //Función que se ejecuta cada 2 segundos para consultar las variables de Particle
-  particle.getVariable({ deviceId: '2e0033000b47313037363132', name: 'irms', auth: token }).then(function (data) { //Obtenemos la variable de Particle
+  particle.getVariable({ deviceId: 'idDelDispositivo', name: 'irms', auth: token }).then(function (data) { //Obtenemos la variable de Particle
     console.log('Variable obtenida correctamente:', data); //Si todo salió bien mostramos el contenido obtenido
     ca = Number(data.body.result); //Guardamos la variable de particle en una variable local y la convertimos a numero
 
