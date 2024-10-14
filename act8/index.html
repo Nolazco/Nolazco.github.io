@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat XMPP</title>
+</head>
+<body>
+  <h1>Chat</h1>
+  <div>
+    <label for="mensaje">Mensaje:</label>
+    <input type="text" id="mensaje" placeholder="Escribe tu mensaje"> <!-- Casilla para mandar mensajes al otro cliente -->
+    <br><br>
+    <button onclick="enviarMensaje()">Enviar Mensaje</button> <!-- Botón para enviar mensaje -->
+  </div>
+  <div>
+    <h3>Mensajes Recibidos:</h3>
+    <ul id="mensajesRecibidos"></ul> <!-- Lista donde se mostraran los mensajes recibidos -->
+  </div>
+</body>
+<script src="https://unpkg.com/@xmpp/client@0.13.1/dist/xmpp.min.js" crossorigin></script> <!-- Librería XMPP -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particle-api-js@10/dist/particle.min.js"></script> <!-- Librería de Particle -->
+<script src="script.js" type="text/javascript" charset="utf-8" async defer></script> <!-- Nuestro archivo de Scripts -->
+</html>
